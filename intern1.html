@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unique Digital Agency</title>
+    <style>
+        /* General Reset and Body */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header .header-btn {
+            background-color: #333;
+            padding: 10px 25px;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://via.placeholder.com/1600x600.png?text=Creative+Agency');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            margin: 20px 0;
+        }
+
+        .hero .hero-btn {
+            background-color: #4CAF50;
+            padding: 12px 25px;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .hero-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #e1f5fe;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            color: #333;
+        }
+
+        .services .service-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services .service {
+            background-color: white;
+            padding: 25px;
+            width: 28%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .services .service:hover {
+            transform: translateY(-12px);
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about .about-text {
+            width: 45%;
+        }
+
+        .about .about-text h2 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .about .about-text p {
+            line-height: 1.7;
+        }
+
+        .about .about-img img {
+            width: 450px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1><a href="#">Unique Agency</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header-btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Your Partner for Digital Solutions</h1>
+            <p>Helping you unlock digital growth with customized solutions.</p>
+            <a href="#" class="hero-btn">Learn More</a>
+            <a href="#" class="hero-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>What We Offer</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Consulting</h3>
+                <p>Expert advice to help you grow your digital presence.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>High-quality web solutions tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <h3>Marketing</h3>
+                <p>We create strategies that help your business succeed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About Our Company</h2>
+            <p>We’ve spent over 15 years helping businesses achieve their digital goals. Our expert team is dedicated to providing personalized service and innovative solutions tailored to each client’s unique needs.</p>
+        </div>
+        <div class="about-img">
+            <img src="https://via.placeholder.com/450x450.png?text=About+Us" alt="About Us">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Unique Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
